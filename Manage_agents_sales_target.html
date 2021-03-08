@@ -1,0 +1,625 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Naqdina</title>
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="icons/css/line-awesome.min.css">
+        <link rel="stylesheet" href="vendor/select-picker/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="vendor/slick/slick.css">
+        <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="topbar">
+                        <ul class="navlist">
+                            <li>
+                                <a href="javascript:;"><span>Balance:</span><h6>AFN  875,222.12</h6></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="notification"><i class="fa fa-bell-o"></i><span class="count">23</span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><p>Hi, Dustin <span>Apr 10,  4:28 PM</span></p><img src="images/user.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="main-section">
+            <div id="navSidebar" class="sidebar">
+                <div class="logo">                    
+                    <a href="index.html" class="logo">
+                        <img src="images/naqdina_logo.png" class="big">
+                        <img src="images/smalllogo.png" class="small">
+                    </a>
+                </div>
+                <h5 class="menuname">Menu</h5>
+                <button class="openbtn openSitebararea"><img src="images/menu_icon.png"></button>  
+                <ul>
+                    <li><a href="javascript:;"> <i class="las la-tachometer-alt "></i> Dashboard</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="javascript:;"> <i class="las la-file-import"></i>  Mobile Recharge</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="javascript:;"> <i class="las la-poll-h"></i> Bill Payment</a></li>
+                    <li><a href="javascript:;"> <i class="las la-address-book"></i> My Acccount</a><i class="fa fa-angle-right"></i></li>
+                    <li class="active"><a href="javascript:;"> <i class="las la-user-friends"></i> Manage Agents</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="javascript:;"> <i class="fa fa-cog"></i> Settings</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="javascript:;"> <i class="las la-chart-pie"></i> Reports</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="javascript:;"> <i class="las la-chart-pie"></i> System Status</a></li>
+                    <li><a href="javascript:;"> <i class="las la-headphones"></i> Help</a><i class="fa fa-angle-right"></i></li>
+                </ul>
+            </div>
+            <div id="main">
+                <div class="innernav">
+                    <ul>
+                        <li><a href="Manage_agents_add_agent.html">Add Agent</a></li>
+                        <li><a href="Manage_agents_invite_agents.html">Invite Agents</a></li>
+                        <li><a href="javascript:;">View Agents</a></li>
+                        <li><a href="Manage_agents_transfer_balance.html">Transfer Balance</a></li>
+                        <li><a href="Manage_agents_agents_requests.html">Agents Requests</a></li>
+                        <li class="active"><a href="javascript:;">Sales Target</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 text-center">
+                        <!-- <div id="chartdiv"></div> -->
+                        <img class="mt-5 speedometr" src="images/speedometr.png">
+                    </div>
+                    <div class="col-md-7">
+                        <h4 class="page-title mt-5">wide Progress</h4>
+                        <p class="pagetext"><span>General Target:</span> <span>$198,542.00</span></p>
+                        <p class="pagetext"><span>Target Period:</span> <span>December 2020</span></p>
+                        <p class="pagetext"><span>Sales Target View:</span> <span>Company Wide</span></p>
+                        <a href="javascript:;" data-toggle="modal" data-target="#configureSalesTarget" class="themebtn extracls"><i class="las la-cog"></i> Configure sales target</a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-12 mt-5">
+                        <div class="tablefilter">
+                            <p>Select the date range</p>
+                            <div class="smallwidth formicon">
+                                <input type="text" class="form-control" value="Last 7 Days">
+                                <i class="inputicon las la-calendar"></i>
+                            </div>
+                            <div class="longwidth formicon">
+                                <input type="text" class="form-control" placeholder="Search Agent by Mobile or Email">
+                                <i class="inputicon las la-search"></i>
+                            </div>
+                            <button type="button" class="filterbtn wauto">View</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="table-responsive tableboxdesign">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Location</th>
+                                        <th>Joined On</th>
+                                        <th>Progress</th>
+                                        <th>Personal Target</th>
+                                        <th>Completed</th>
+                                        <th>Remaining</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="images/agent_profile.png"> Brandon Fox</td>
+                                        <td>Delaware, US</td>
+                                        <td>21/05/20</td>
+                                        <td><span class="progressdiv"><span class="progresscolor blue" style="width: 65%;"></span></span></td>
+                                        <td>30 Deals</td>
+                                        <td><span class="blue">15 Deals</span></td>
+                                        <td><span class="green">30 Deals</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/agent_profile.png"> Jane Cooper</td>
+                                        <td>Delaware, US</td>
+                                        <td>21/05/20</td>
+                                        <td><span class="progressdiv"><span class="progresscolor green" style="width: 100%;"></span></span></td>
+                                        <td>30 Deals</td>
+                                        <td><span class="blue">15 Deals</span></td>
+                                        <td><span class="green">0 Deals</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/agent_profile.png"> Wade Warren</td>
+                                        <td>Delaware, US</td>
+                                        <td>21/05/20</td>
+                                        <td><span class="progressdiv"><span class="progresscolor blue" style="width: 65%;"></span></span></td>
+                                        <td>30 Deals</td>
+                                        <td><span class="blue">15 Deals</span></td>
+                                        <td><span class="green">30 Deals</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/agent_profile.png"> Esther Howard</td>
+                                        <td>Delaware, US</td>
+                                        <td>21/05/20</td>
+                                        <td><span class="progressdiv"><span class="progresscolor blue" style="width: 65%;"></span></span></td>
+                                        <td>30 Deals</td>
+                                        <td><span class="blue">15 Deals</span></td>
+                                        <td><span class="green">30 Deals</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/agent_profile.png"> Brandon Fox</td>
+                                        <td>Delaware, US</td>
+                                        <td>21/05/20</td>
+                                        <td><span class="progressdiv"><span class="progresscolor blue" style="width: 65%;"></span></span></td>
+                                        <td>30 Deals</td>
+                                        <td><span class="blue">15 Deals</span></td>
+                                        <td><span class="green">30 Deals</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/agent_profile.png"> Brandon Fox</td>
+                                        <td>Delaware, US</td>
+                                        <td>21/05/20</td>
+                                        <td><span class="progressdiv"><span class="progresscolor blue" style="width: 65%;"></span></span></td>
+                                        <td>30 Deals</td>
+                                        <td><span class="blue">15 Deals</span></td>
+                                        <td><span class="green">30 Deals</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/agent_profile.png"> Brandon Fox</td>
+                                        <td>Delaware, US</td>
+                                        <td>21/05/20</td>
+                                        <td><span class="progressdiv"><span class="progresscolor blue" style="width: 65%;"></span></span></td>
+                                        <td>30 Deals</td>
+                                        <td><span class="blue">15 Deals</span></td>
+                                        <td><span class="green">30 Deals</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/agent_profile.png"> Brandon Fox</td>
+                                        <td>Delaware, US</td>
+                                        <td>21/05/20</td>
+                                        <td><span class="progressdiv"><span class="progresscolor blue" style="width: 65%;"></span></span></td>
+                                        <td>30 Deals</td>
+                                        <td><span class="blue">15 Deals</span></td>
+                                        <td><span class="green">30 Deals</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal successpopup" id="configureSalesTarget">
+            <div class="modal-dialog">
+              <div class="modal-content">      
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>      
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="sucessbox">
+                        <div class="sucessprofile">
+                            <img src="images/ill_sales_target.png">
+                        </div>
+                        <div class="sucessmessage smallp">
+                            <h4>Configure Sales Target</h4>
+                            <p class="text-left">Select target period:</p>
+                            <div class="nav-tabs-wrapper">
+                                <ul class="nav nav-tabs dragscroll horizontal">
+                                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#month">Month</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#quater">Quater</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#halfYear">Half-year</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#year">Year</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="month">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Month</label>
+                                                <select class="form-control">
+                                                    <option>November</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Year</label>
+                                                <select class="form-control">
+                                                    <option>2020</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Select Target</label>
+                                                <select class="form-control">
+                                                    <option>Number of Total Sales</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Select View</label>
+                                                <select class="form-control">
+                                                    <option>Company Wide</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Enter Target Amount </label>
+                                                <select class="form-control">
+                                                    <option>Company Wide</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <a href="javascript:;" data-toggle="modal" data-target="#successInvite" data-dismiss="modal" class="themebtn disply-block wauto">Save</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="quater">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Month</label>
+                                                <select class="form-control">
+                                                    <option>November</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Year</label>
+                                                <select class="form-control">
+                                                    <option>2020</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Select Target</label>
+                                                <select class="form-control">
+                                                    <option>Number of Total Sales</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Select View</label>
+                                                <select class="form-control">
+                                                    <option>Company Wide</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Enter Target Amount </label>
+                                                <select class="form-control">
+                                                    <option>Company Wide</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <a href="javascript:;" data-toggle="modal" data-target="#successInvite" data-dismiss="modal" class="themebtn disply-block wauto">Save</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="halfYear">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Month</label>
+                                                <select class="form-control">
+                                                    <option>November</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Year</label>
+                                                <select class="form-control">
+                                                    <option>2020</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Select Target</label>
+                                                <select class="form-control">
+                                                    <option>Number of Total Sales</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Select View</label>
+                                                <select class="form-control">
+                                                    <option>Company Wide</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Enter Target Amount </label>
+                                                <select class="form-control">
+                                                    <option>Company Wide</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <a href="javascript:;" data-toggle="modal" data-target="#successInvite" data-dismiss="modal" class="themebtn disply-block wauto">Save</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="year">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Month</label>
+                                                <select class="form-control">
+                                                    <option>November</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Year</label>
+                                                <select class="form-control">
+                                                    <option>2020</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Select Target</label>
+                                                <select class="form-control">
+                                                    <option>Number of Total Sales</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Select View</label>
+                                                <select class="form-control">
+                                                    <option>Company Wide</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Enter Target Amount </label>
+                                                <select class="form-control">
+                                                    <option>Company Wide</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <p class="text-left">Agents</p>
+                                            <div class="userboxarea">
+                                                <div class="profile">
+                                                    <img src="images/user_popup.png">
+                                                    Karimi Jeg Murad
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="00.0" value="25">
+                                                <span class="crossion"><i class="las la-times"></i></span>
+                                            </div>
+                                            <div class="userboxarea">
+                                                <div class="profile">
+                                                    <img src="images/user_popup.png">
+                                                    Karl Faruk
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="00.0">
+                                                <span class="crossion"><i class="las la-times"></i></span>
+                                            </div>
+                                            <span class="brline"></span>
+                                            <p class="text-left">To add a new Agent, start entering his name or phone number</p>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="text" class="form-control" placeholder="Type agent name">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <a href="javascript:;" data-toggle="modal" data-target="#successInvite" data-dismiss="modal" class="themebtn disply-block wauto">Save</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+              </div>
+            </div>
+          </div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+       <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+       <script src="vendor/select-picker/js/bootstrap-select.min.js"></script>
+       <script src="vendor/slick/slick.js"></script>
+       <script src="js/script.js"></script>
+       <!-- <script src="vendor/graph/core.js"></script>
+       <script src="vendor/graph/charts.js"></script>
+       <script src="vendor/graph/animated.js"></script>
+       <script>
+        am4core.ready(function() {
+        
+        // Themes begin
+        am4core.useTheme(am4themes_animated);
+        // Themes end
+        
+        var chartMin = 0;
+        var chartMax = 180;
+        
+        
+        
+        var data = {
+          score: 90,
+          gradingData: [
+            {
+              title: "",
+              color: "#FF0000",
+              lowScore: 0,
+              highScore: 50
+            },
+            {
+              title: "",
+              color: "#FBB03B",
+              lowScore: 50,
+              highScore: 110
+            },
+            {
+              title: "",
+              color: "#2EB67D",
+              lowScore: 110,
+              highScore: 180
+            }
+          ]
+        };
+        
+        /**
+        Grading Lookup
+         */
+        function lookUpGrade(lookupScore, grades) {
+          // Only change code below this line
+          for (var i = 0; i < grades.length; i++) {
+            if (
+              grades[i].lowScore < lookupScore &&
+              grades[i].highScore >= lookupScore
+            ) {
+              return grades[i];
+            }
+          }
+          return null;
+        }
+        
+        // create chart
+        var chart = am4core.create("chartdiv", am4charts.GaugeChart);
+        chart.hiddenState.properties.opacity = 0;
+        chart.fontSize = 11;
+        chart.innerRadius = am4core.percent(80);
+        chart.resizable = true;
+        
+        /**
+         * Normal axis
+         */
+        
+        var axis = chart.xAxes.push(new am4charts.ValueAxis());
+        axis.min = chartMin;
+        axis.max = chartMax;
+        axis.strictMinMax = true;
+        axis.renderer.radius = am4core.percent(80);
+        axis.renderer.inside = true;
+        axis.renderer.line.strokeOpacity = 0.1;
+        axis.renderer.ticks.template.disabled = false;
+        axis.renderer.ticks.template.strokeOpacity = 1;
+        axis.renderer.ticks.template.strokeWidth = 0.5;
+        axis.renderer.ticks.template.length = 5;
+        axis.renderer.grid.template.disabled = true;
+        axis.renderer.labels.template.radius = am4core.percent(15);
+        axis.renderer.labels.template.fontSize = "0.9em";
+        
+        /**
+         * Axis for ranges
+         */
+        
+        var axis2 = chart.xAxes.push(new am4charts.ValueAxis());
+        axis2.min = chartMin;
+        axis2.max = chartMax;
+        axis2.strictMinMax = true;
+        axis2.renderer.labels.template.disabled = true;
+        axis2.renderer.ticks.template.disabled = true;
+        axis2.renderer.grid.template.disabled = false;
+        axis2.renderer.grid.template.opacity = 0.5;
+        axis2.renderer.labels.template.bent = true;
+        axis2.renderer.labels.template.fill = am4core.color("#000");
+        axis2.renderer.labels.template.fontWeight = "bold";
+        axis2.renderer.labels.template.fillOpacity = 0.3;
+        
+        
+        
+        /**
+        Ranges
+        */
+        
+        for (let grading of data.gradingData) {
+          var range = axis2.axisRanges.create();
+          range.axisFill.fill = am4core.color(grading.color);
+          range.axisFill.fillOpacity = 0.8;
+          range.axisFill.zIndex = -1;
+          range.value = grading.lowScore > chartMin ? grading.lowScore : chartMin;
+          range.endValue = grading.highScore < chartMax ? grading.highScore : chartMax;
+          range.grid.strokeOpacity = 0;
+          range.stroke = am4core.color(grading.color).lighten(-0.1);
+          range.label.inside = true;
+          range.label.text = grading.title.toUpperCase();
+          range.label.inside = true;
+          range.label.location = 0.5;
+          range.label.inside = true;
+          range.label.radius = am4core.percent(10);
+          range.label.paddingBottom = -5; // ~half font size
+          range.label.fontSize = "0.9em";
+        }
+        
+        var matchingGrade = lookUpGrade(data.score, data.gradingData);
+        
+        /**
+         * Label 1
+         */
+        
+        var label = chart.radarContainer.createChild(am4core.Label);
+        label.isMeasured = false;
+        label.fontSize = "6em";
+        label.x = am4core.percent(50);
+        label.paddingBottom = 15;
+        label.horizontalCenter = "middle";
+        label.verticalCenter = "bottom";
+        //label.dataItem = data;
+        label.text = data.score.toFixed(1);
+        //label.text = "{score}";
+        label.fill = am4core.color(matchingGrade.color);
+        
+        /**
+         * Label 2
+         */
+        
+        var label2 = chart.radarContainer.createChild(am4core.Label);
+        label2.isMeasured = false;
+        label2.fontSize = "2em";
+        label2.horizontalCenter = "middle";
+        label2.verticalCenter = "bottom";
+        label2.text = matchingGrade.title.toUpperCase();
+        label2.fill = am4core.color(matchingGrade.color);
+        
+        
+        /**
+         * Hand
+         */
+        
+        var hand = chart.hands.push(new am4charts.ClockHand());
+        hand.axis = axis2;
+        hand.innerRadius = am4core.percent(55);
+        hand.startWidth = 8;
+        hand.pin.disabled = true;
+        hand.value = data.score;
+        hand.fill = am4core.color("#444");
+        hand.stroke = am4core.color("#000");
+        
+        hand.events.on("positionchanged", function(){
+          label.text = axis2.positionToValue(hand.currentPosition).toFixed(1);
+          var value2 = axis.positionToValue(hand.currentPosition);
+          var matchingGrade = lookUpGrade(axis.positionToValue(hand.currentPosition), data.gradingData);
+          label2.text = matchingGrade.title.toUpperCase();
+          label2.fill = am4core.color(matchingGrade.color);
+          label2.stroke = am4core.color(matchingGrade.color);  
+          label.fill = am4core.color(matchingGrade.color);
+        })
+        
+        setInterval(function() {
+            var value = chartMin + Math.random() * (chartMax - chartMin);
+            hand.showValue(value, 1000, am4core.ease.cubicOut);
+        }, 2000);
+        
+        }); // end am4core.ready()
+        </script> -->
+    </body>
+</html>
