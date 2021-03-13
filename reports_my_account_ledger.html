@@ -45,10 +45,10 @@
                     <li><a href="javascript:;"> <i class="las la-tachometer-alt "></i> Dashboard</a><i class="fa fa-angle-right"></i></li>
                     <li><a href="mobile_recharge_mobile_top.html"> <i class="las la-file-import"></i>  Mobile Recharge</a><i class="fa fa-angle-right"></i></li>
                     <li><a href="bill_payments.html"> <i class="las la-poll-h"></i> Bill Payment</a></li>
-                    <li><a href="my_account_request_balance.html"> <i class="las la-address-book"></i> My Acccount</a><i class="fa fa-angle-right"></i></li>
-                    <li class="active"><a href="javascript:;"> <i class="las la-user-friends"></i> Manage Agents</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="my_account_mobile_money_account.html"> <i class="las la-address-book"></i> My Acccount</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="Manage_agents_add_agent.html"> <i class="las la-user-friends"></i> Manage Agents</a><i class="fa fa-angle-right"></i></li>
                     <li><a href="settings_notifications.html"> <i class="fa fa-cog"></i> Settings</a><i class="fa fa-angle-right"></i></li>
-                    <li><a href="reports_credit_statement.html"> <i class="las la-chart-pie"></i> Reports</a><i class="fa fa-angle-right"></i></li>
+                    <li class="active"><a href="javascript:;"> <i class="las la-chart-pie"></i> Reports</a><i class="fa fa-angle-right"></i></li>
                     <li><a href="javascript:;"> <i class="las la-chart-pie"></i> System Status</a></li>
                     <li><a href="javascript:;"> <i class="las la-headphones"></i> Help</a><i class="fa fa-angle-right"></i></li>
                 </ul>
@@ -56,49 +56,31 @@
             <div id="main">
                 <div class="innernav">
                     <ul>
-                        <li><a href="Manage_agents_add_agent.html">Add Agent</a></li>
-                        <li><a href="Manage_agents_invite_agents.html">Invite Agents</a></li>
-                        <li><a href="javascript:;">View Agents</a></li>
-                        <li class="active"><a href="javascript:;">Transfer Balance</a></li>
-                        <li><a href="Manage_agents_agents_requests.html">Agents Requests</a></li>
-                        <li><a href="Manage_agents_sales_target.html">Sales Target</a></li>
+                        <li><a href="reports_credit_statement.html">Credit Statement</a></li>
+                        <li class="active"><a href="javascript:;">My Account Ledger</a></li>
+                        <li><a href="reports_my_agent_statement.html">Agent Statement</a></li>
+                        <li><a href="reports_my_transaction_report.html">Transaction Report</a></li>
+                        <li><a href="javascript:;">Lender Account Ledger</a></li>
                     </ul>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="boxgrid">
-                            <div class="row">
-                                <div class="col-xl-3 col-lg-6 col-md-6">
-                                    <div class="form-group">
-                                        <label class="form-label">Your account number</label>
-                                        <select class="form-control">
-                                            <option>+93 12 344 5678 (Primary Number)</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-6 col-md-6">
-                                    <div class="form-group formicon">
-                                        <label class="form-label">Enter Agent Mobile Number</label>
-                                        <input type="text" class="form-control" placeholder="Mobile Number" value="+93 12 344 5678">
-                                        <img src="images/Etisalat.png" class="inputicon imgs">
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-6 col-md-6">
-                                    <div class="form-group">
-                                        <label class="form-label">Select or Enter Transfer Amount </label>
-                                        <input type="text" class="form-control" placeholder="Transfer Amount" value="5,000.00">
-                                        <ul class="numbers">
-                                            <li class="active"><a href="javascript:;">25</a></li>
-                                            <li><a href="javascript:;">50</a></li>
-                                            <li><a href="javascript:;">100</a></li>
-                                            <li><a href="javascript:;">250</a></li>
-                                            <li><a href="javascript:;">500</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-6 col-md-6">
-                                    <button type="button" class="themebtn wauto mt-4">Submit</button>
-                                </div>
+                    <div class="col-md-2">
+                        <div class="boxgrid smallpadd">
+                            <div class="reportbox">
+                                <span class="reportstatus green">
+                                    incoming <i class="las la-arrow-up"></i>
+                                </span>
+                                <p>$198,542.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="boxgrid smallpadd">
+                            <div class="reportbox">
+                                <span class="reportstatus red">
+                                    outgoing <i class="las la-arrow-down"></i>
+                                </span>
+                                <p>$165,000.00</p>
                             </div>
                         </div>
                     </div>
@@ -125,102 +107,120 @@
                                         <th>S. No</th>
                                         <th>Request ID</th>
                                         <th>Date & Time</th>
-                                        <th>Your Account</th>
+                                        <th>Agent Name</th>
+                                        <th>Settlement</th>
                                         <th>Provider Name</th>
                                         <th>Customer No.</th>
                                         <th>Face Value</th>
-                                        <th>Net Value</th>
-                                        <th>Status</th>
+                                        <th>Debit</th>
+                                        <th>Credit</th>
+                                        <th>Balance</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>001</td>
-                                        <td>423487230</td>
+                                        <td><span class="lighttext">1006598</span></td>
                                         <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><strong>Admin Payment</strong></td>
+                                        <td><span class="lighttext">AWCC Telecom</span></td>
                                         <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status success">Success</span></td>
+                                        <td><strong>50.00</strong></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><strong>1,887.50</strong></td>
                                     </tr>
                                     <tr>
                                         <td>002</td>
-                                        <td>423487230</td>
+                                        <td><span class="lighttext">1006598</span></td>
                                         <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><strong>Admin Payment</strong></td>
+                                        <td><span class="lighttext">AWCC Telecom</span></td>
                                         <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status failed">Failed</span></td>
+                                        <td><strong>50.00</strong></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><strong>1,887.50</strong></td>
                                     </tr>
                                     <tr>
                                         <td>003</td>
-                                        <td>423487230</td>
+                                        <td><span class="lighttext">1006598</span></td>
                                         <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><strong>Admin Payment</strong></td>
+                                        <td><span class="lighttext">AWCC Telecom</span></td>
                                         <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status success">Success</span></td>
+                                        <td><strong>50.00</strong></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><strong>1,887.50</strong></td>
                                     </tr>
                                     <tr>
                                         <td>004</td>
-                                        <td>423487230</td>
+                                        <td><span class="lighttext">1006598</span></td>
                                         <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><strong>Admin Payment</strong></td>
+                                        <td><span class="lighttext">AWCC Telecom</span></td>
                                         <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status success">Success</span></td>
+                                        <td><strong>50.00</strong></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><strong>1,887.50</strong></td>
                                     </tr>
                                     <tr>
                                         <td>005</td>
-                                        <td>423487230</td>
+                                        <td><span class="lighttext">1006598</span></td>
                                         <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><strong>Admin Payment</strong></td>
+                                        <td><span class="lighttext">AWCC Telecom</span></td>
                                         <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status success">Success</span></td>
+                                        <td><strong>50.00</strong></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><strong>1,887.50</strong></td>
                                     </tr>
                                     <tr>
                                         <td>006</td>
-                                        <td>423487230</td>
+                                        <td><span class="lighttext">1006598</span></td>
                                         <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><strong>Admin Payment</strong></td>
+                                        <td><span class="lighttext">AWCC Telecom</span></td>
                                         <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status success">Success</span></td>
+                                        <td><strong>50.00</strong></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><strong>1,887.50</strong></td>
                                     </tr>
                                     <tr>
                                         <td>007</td>
-                                        <td>423487230</td>
+                                        <td><span class="lighttext">1006598</span></td>
                                         <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><strong>Admin Payment</strong></td>
+                                        <td><span class="lighttext">AWCC Telecom</span></td>
                                         <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status success">Success</span></td>
+                                        <td><strong>50.00</strong></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><strong>1,887.50</strong></td>
                                     </tr>
                                     <tr>
                                         <td>008</td>
-                                        <td>423487230</td>
+                                        <td><span class="lighttext">1006598</span></td>
                                         <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><strong>Admin Payment</strong></td>
+                                        <td><span class="lighttext">AWCC Telecom</span></td>
                                         <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status success">Success</span></td>
+                                        <td><strong>50.00</strong></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><span class="lighttext">47.00</span></td>
+                                        <td><strong>1,887.50</strong></td>
                                     </tr>
                                 </tbody>
                             </table>

@@ -43,10 +43,10 @@
                 <button class="openbtn openSitebararea"><img src="images/menu_icon.png"></button>  
                 <ul>
                     <li><a href="javascript:;"> <i class="las la-tachometer-alt "></i> Dashboard</a><i class="fa fa-angle-right"></i></li>
-                    <li><a href="mobile_recharge_mobile_top.html"> <i class="las la-file-import"></i>  Mobile Recharge</a><i class="fa fa-angle-right"></i></li>
+                    <li class="active"><a href="javascript:;"> <i class="las la-file-import"></i>  Mobile Recharge</a><i class="fa fa-angle-right"></i></li>
                     <li><a href="bill_payments.html"> <i class="las la-poll-h"></i> Bill Payment</a></li>
                     <li><a href="my_account_request_balance.html"> <i class="las la-address-book"></i> My Acccount</a><i class="fa fa-angle-right"></i></li>
-                    <li class="active"><a href="javascript:;"> <i class="las la-user-friends"></i> Manage Agents</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="Manage_agents_add_agent.html"> <i class="las la-user-friends"></i> Manage Agents</a><i class="fa fa-angle-right"></i></li>
                     <li><a href="settings_notifications.html"> <i class="fa fa-cog"></i> Settings</a><i class="fa fa-angle-right"></i></li>
                     <li><a href="reports_credit_statement.html"> <i class="las la-chart-pie"></i> Reports</a><i class="fa fa-angle-right"></i></li>
                     <li><a href="javascript:;"> <i class="las la-chart-pie"></i> System Status</a></li>
@@ -56,19 +56,16 @@
             <div id="main">
                 <div class="innernav">
                     <ul>
-                        <li><a href="Manage_agents_add_agent.html">Add Agent</a></li>
-                        <li><a href="Manage_agents_invite_agents.html">Invite Agents</a></li>
-                        <li><a href="javascript:;">View Agents</a></li>
-                        <li class="active"><a href="javascript:;">Transfer Balance</a></li>
-                        <li><a href="Manage_agents_agents_requests.html">Agents Requests</a></li>
-                        <li><a href="Manage_agents_sales_target.html">Sales Target</a></li>
+                        <li><a href="mobile_recharge_mobile_top.html">Mobile Top-up</a></li>
+                        <li class="active"><a href="javascript:;">Bulk Top-up</a></li>
+                        <li><a href="mobile_recharge_digital_voucher.html">Digital Voucher</a></li>
                     </ul>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="boxgrid">
                             <div class="row">
-                                <div class="col-xl-3 col-lg-6 col-md-6">
+                                <div class="col-xl-4 col-lg-6 col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">Your account number</label>
                                         <select class="form-control">
@@ -76,27 +73,14 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 col-lg-6 col-md-6">
+                                <div class="col-xl-4 col-lg-6 col-md-6">
                                     <div class="form-group formicon">
-                                        <label class="form-label">Enter Agent Mobile Number</label>
+                                        <label class="form-label">Please upload the file (.csv, .xls)</label>
                                         <input type="text" class="form-control" placeholder="Mobile Number" value="+93 12 344 5678">
                                         <img src="images/Etisalat.png" class="inputicon imgs">
                                     </div>
                                 </div>
-                                <div class="col-xl-3 col-lg-6 col-md-6">
-                                    <div class="form-group">
-                                        <label class="form-label">Select or Enter Transfer Amount </label>
-                                        <input type="text" class="form-control" placeholder="Transfer Amount" value="5,000.00">
-                                        <ul class="numbers">
-                                            <li class="active"><a href="javascript:;">25</a></li>
-                                            <li><a href="javascript:;">50</a></li>
-                                            <li><a href="javascript:;">100</a></li>
-                                            <li><a href="javascript:;">250</a></li>
-                                            <li><a href="javascript:;">500</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-6 col-md-6">
+                                <div class="col-xl-4 col-lg-6 col-md-6">
                                     <button type="button" class="themebtn wauto mt-4">Submit</button>
                                 </div>
                             </div>
@@ -113,8 +97,16 @@
                                 <input type="text" class="form-control" placeholder="Search Agent by Mobile or Email">
                                 <i class="inputicon las la-search"></i>
                             </div>
-                            <button type="button" class="filterbtn wauto">View</button>
-                            <button type="button" class="filterbtn"><i class="las la-download"></i> Download</button>
+                            <button type="button" class="filterbtn wauto" data-target="#confirmTopUp" data-toggle="modal">View</button>
+                            <button type="button" class="filterbtn" data-toggle="modal" data-target="#topUpSuccessful"><i class="las la-download"></i> Download</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="mlr-15">
+                            <div class="progress customeprocess">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <span class="textprocess">300/2000 Completed</span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-12">
@@ -229,7 +221,7 @@
                 </div>
             </div>
         </section>
-        <div class="modal successpopup" id="inviteAgents">
+        <div class="modal successpopup" id="confirmTopUp">
             <div class="modal-dialog">
               <div class="modal-content">      
                 <!-- Modal Header -->
@@ -240,25 +232,79 @@
                 <div class="modal-body">
                     <div class="sucessbox">
                         <div class="sucessprofile">
-                            <img src="images/agent.png">
+                            <img src="images/confirm.png">
                         </div>
                         <div class="sucessmessage smallp">
-                            <h4>Invite Agents</h4>
+                            <h4>Confirm Bulk Top-up</h4>
                             <p class="themetext">You will sent invite to 6 users:</p>
-                            <p>+93 70 022 4848;<br>
-                            mubrak.muhammad@gmail.com</p>
-                            <p>+93 70 022 4848;<br>
-                            mubrak.muhammad@gmail.com</p>
-                            <p>+93 70 022 4848;<br>
-                            mubrak.muhammad@gmail.com</p>
-                            <a href="javascript:;" data-toggle="modal" data-target="#successInvite" data-dismiss="modal" class="themebtn disply-block wauto">submit</a>
+                            <p class="topuplist"><span class="title">Total Numbers:</span><span class="val">2000</span></p>
+                            <p class="topuplist"><span class="title">Total Value:</span><span class="val themeclr">$250,000.00</span></p>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <a href="javascript:;" data-dismiss="modal" class="borderthemebtn">cancel</a>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <a href="javascript:;" data-dismiss="modal" data-toggle="modal" data-target="#yourPin" class="themebtn">Confirm</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>      
               </div>
             </div>
           </div>
-          <div class="modal successpopup" id="successInvite">
+        <div class="modal successpopup" id="yourPin">
+            <div class="modal-dialog">
+            <div class="modal-content">      
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>      
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="sucessbox">
+                        <div class="sucessprofile">
+                            <img src="images/pin_web.png">
+                        </div>
+                        <div class="sucessmessage smallp">
+                            <h4>Enter your PIN</h4>
+                            <div class="form-group yourpin">
+                                <input type="password" class="form-control">
+                                <input type="password" class="form-control">
+                                <input type="password" class="form-control">
+                                <input type="password" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+            </div>
+        </div>
+        <div class="modal successpopup" id="topUpSuccessful">
+            <div class="modal-dialog">
+              <div class="modal-content">      
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>      
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="sucessbox">
+                        <div class="sucessprofile">
+                            <img src="images/Success.png">
+                        </div>
+                        <div class="sucessmessage smallp">
+                            <h4>Bulk Top-up Successful!</h4>
+                            <p class="topuplist"><span class="title">Total Numbers:</span><span class="val">2000</span></p>
+                            <p class="topuplist"><span class="title">Total Value:</span><span class="val themeclr">$250,000.00</span></p>
+                            <a href="javascript:;" data-dismiss="modal" data-toggle="modal" data-target="#halfTopUpSuccessful" class="themebtn wauto">OK</a>
+                        </div>
+                    </div>
+                </div>      
+              </div>
+            </div>
+          </div>
+          <div class="modal successpopup" id="halfTopUpSuccessful">
               <div class="modal-dialog">
                 <div class="modal-content">      
                   <!-- Modal Header -->
@@ -272,9 +318,20 @@
                               <img src="images/Success.png">
                           </div>
                           <div class="sucessmessage smallp">
-                              <h4>Success!</h4>
-                              <p>You have sent invitations to 6 Users. They will receive a message with a link and will be able to register in the Nakdina app</p>
-                              <a href="javascript:;" class="themebtn disply-block wauto">ok</a>
+                              <h4>1950/2000 Top-ups Successful!</h4>
+                              <p class="faildtext">50 Transactions Failed</p>
+                              <p class="topuplist"><span class="title">Total Numbers:</span><span class="val">2000</span></p>
+                              <p class="topuplist"><span class="title">Total Value:</span><span class="val themeclr">$250,000.00</span></p>
+                              <p class="topuplist"><span class="title">Total Success:</span><span class="val">1950 ($200,000.00) </span></p>
+                              <p class="topuplist"><span class="title">Total Failed:</span><span class="val">50 ($50,000) </span></p>
+                              <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <a href="javascript:;" data-dismiss="modal" class="borderthemebtn">ignore</a>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <a href="javascript:;" data-dismiss="modal" class="themebtn">try again</a>
+                                </div>
+                            </div>
                           </div>
                       </div>
                   </div>      
