@@ -1,0 +1,250 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Naqdina</title>
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="icons/css/line-awesome.min.css">
+        <link rel="stylesheet" href="vendor/select-picker/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="vendor/slick/slick.css">
+        <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="topbar">
+                        <ul class="navlist">
+                            <li>
+                                <a href="javascript:;"><span>Balance:</span><h6>AFN  875,222.12</h6></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="notification"><i class="fa fa-bell-o"></i><span class="count">23</span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><p>Hi, Dustin <span>Apr 10,  4:28 PM</span></p><img src="images/user.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="main-section">
+            <div id="navSidebar" class="sidebar">
+                <div class="logo">                    
+                    <a href="index.html" class="logo">
+                        <img src="images/naqdina_logo.png" class="big">
+                        <img src="images/smalllogo.png" class="small">
+                    </a>
+                </div>
+                <h5 class="menuname">Menu</h5>
+                <button class="openbtn openSitebararea"><img src="images/menu_icon.png"></button>  
+                <ul>
+                    <li><a href="javascript:;"> <i class="las la-tachometer-alt "></i> Dashboard</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="javascript:;"> <i class="las la-file-import"></i>  Mobile Recharge</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="javascript:;"> <i class="las la-poll-h"></i> Bill Payment</a></li>
+                    <li><a href="javascript:;"> <i class="las la-address-book"></i> My Acccount</a><i class="fa fa-angle-right"></i></li>
+                    <li class="active"><a href="javascript:;"> <i class="las la-user-friends"></i> Manage Agents</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="javascript:;"> <i class="fa fa-cog"></i> Settings</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="javascript:;"> <i class="las la-chart-pie"></i> Reports</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="javascript:;"> <i class="las la-chart-pie"></i> System Status</a></li>
+                    <li><a href="javascript:;"> <i class="las la-headphones"></i> Help</a><i class="fa fa-angle-right"></i></li>
+                </ul>
+            </div>
+            <div id="main">
+                <div class="innernav">
+                    <ul>
+                        <li><a href="javascript:;">Add Agent</a></li>
+                        <li><a href="javascript:;">Invite Agents</a></li>
+                        <li><a href="javascript:;">View Agents</a></li>
+                        <li><a href="javascript:;">Transfer Balance</a></li>
+                        <li class="active"><a href="javascript:;">Agents Requests</a></li>
+                        <li><a href="javascript:;">Sales Target</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tablefilter">
+                            <p>Select the date range</p>
+                            <div class="smallwidth formicon">
+                                <input type="text" class="form-control" value="Last 7 Days">
+                                <i class="inputicon las la-calendar"></i>
+                            </div>
+                            <div class="longwidth formicon">
+                                <input type="text" class="form-control" placeholder="Search Agent by Mobile or Email">
+                                <i class="inputicon las la-search"></i>
+                            </div>
+                            <button type="button" class="filterbtn wauto">View</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="table-responsive tableboxdesign">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S. No</th>
+                                        <th>Date & Time</th>
+                                        <th>Agent Name</th>
+                                        <th>Agent No.</th>
+                                        <th>Bank Name</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><span class="lighttext">+93 12 344 5678</span></td>
+                                        <td>Azizi Bank</td>
+                                        <td>$500.00</td>
+                                        <td><span class="status pending">Pending</span></td>
+                                        <td><a href="javascript:;" class="borderthemebtn">Reject</a><a href="javascript:;" class="themebtn">accept</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>002</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><span class="lighttext">+93 12 344 5678</span></td>
+                                        <td>Azizi Bank</td>
+                                        <td>$500.00</td>
+                                        <td><span class="status pending">Pending</span></td>
+                                        <td><a href="javascript:;" class="borderthemebtn">Reject</a><a href="javascript:;" class="themebtn">accept</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>003</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><span class="lighttext">+93 12 344 5678</span></td>
+                                        <td>Azizi Bank</td>
+                                        <td>$500.00</td>
+                                        <td><span class="status pending">Pending</span></td>
+                                        <td><a href="javascript:;" class="borderthemebtn">Reject</a><a href="javascript:;" class="themebtn">accept</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>004</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><span class="lighttext">+93 12 344 5678</span></td>
+                                        <td>Azizi Bank</td>
+                                        <td>$500.00</td>
+                                        <td><span class="status success">Accepted</span></td>
+                                        <td><a href="javascript:;" class="borderthemebtn">Reject</a><a href="javascript:;" class="themebtn">accept</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>005</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><span class="lighttext">+93 12 344 5678</span></td>
+                                        <td>Azizi Bank</td>
+                                        <td>$500.00</td>
+                                        <td><span class="status failed">Rejected</span></td>
+                                        <td><a href="javascript:;" class="borderthemebtn">Reject</a><a href="javascript:;" class="themebtn">accept</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>006</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><span class="lighttext">+93 12 344 5678</span></td>
+                                        <td>Azizi Bank</td>
+                                        <td>$500.00</td>
+                                        <td><span class="status success">Accepted</span></td>
+                                        <td><a href="javascript:;" class="borderthemebtn">Reject</a><a href="javascript:;" class="themebtn">accept</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>007</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><span class="lighttext">+93 12 344 5678</span></td>
+                                        <td>Azizi Bank</td>
+                                        <td>$500.00</td>
+                                        <td><span class="status success">Accepted</span></td>
+                                        <td><a href="javascript:;" class="borderthemebtn">Reject</a><a href="javascript:;" class="themebtn">accept</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>008</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td><img src="images/agent_profile.png"> Jenny Simmmons</td>
+                                        <td><span class="lighttext">+93 12 344 5678</span></td>
+                                        <td>Azizi Bank</td>
+                                        <td>$500.00</td>
+                                        <td><span class="status success">Accepted</span></td>
+                                        <td><a href="javascript:;" class="borderthemebtn">Reject</a><a href="javascript:;" class="themebtn">accept</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="nohaveagents">
+                            <div class="noagents">
+                                <img src="images/no_have_agents.png">
+                                <p>You haven’t attracted any Agents yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal successpopup" id="inviteAgents">
+            <div class="modal-dialog">
+              <div class="modal-content">      
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>      
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="sucessbox">
+                        <div class="sucessprofile">
+                            <img src="images/agent.png">
+                        </div>
+                        <div class="sucessmessage smallp">
+                            <h4>Invite Agents</h4>
+                            <p class="themetext">You will sent invite to 6 users:</p>
+                            <p>+93 70 022 4848;<br>
+                            mubrak.muhammad@gmail.com</p>
+                            <p>+93 70 022 4848;<br>
+                            mubrak.muhammad@gmail.com</p>
+                            <p>+93 70 022 4848;<br>
+                            mubrak.muhammad@gmail.com</p>
+                            <a href="javascript:;" data-toggle="modal" data-target="#successInvite" data-dismiss="modal" class="themebtn disply-block wauto">submit</a>
+                        </div>
+                    </div>
+                </div>      
+              </div>
+            </div>
+          </div>
+          <div class="modal successpopup" id="successInvite">
+              <div class="modal-dialog">
+                <div class="modal-content">      
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>      
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                      <div class="sucessbox">
+                          <div class="sucessprofile">
+                              <img src="images/Success.png">
+                          </div>
+                          <div class="sucessmessage smallp">
+                              <h4>Success!</h4>
+                              <p>You have sent invitations to 6 Users. They will receive a message with a link and will be able to register in the Nakdina app</p>
+                              <a href="javascript:;" class="themebtn disply-block wauto">ok</a>
+                          </div>
+                      </div>
+                  </div>      
+                </div>
+              </div>
+            </div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+       <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+       <script src="vendor/select-picker/js/bootstrap-select.min.js"></script>
+       <script src="vendor/slick/slick.js"></script>
+       <script src="js/script.js"></script>
+    </body>
+</html>
