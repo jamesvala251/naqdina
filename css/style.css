@@ -1921,3 +1921,94 @@ p.themetext.bigtext {
         display: inline-block;
     }
 }
+
+span.splittext {
+    width: 60px;
+}
+.boxgrid .graphtext {
+    width: 40%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.boxgrid  .graphimg {
+    position: relative;
+    display: inline-block;
+    width: 58%;
+    vertical-align: middle;
+}
+.boxgrid .graphimg img {
+    max-width: 100%;
+}
+.boxgrid .graphimg img:first-child {
+    margin-bottom: -24px;
+}
+.boxgrid .graphimg span.month {
+    display: inline-block;
+    width: 33.33%;
+    text-align: right;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #CBCBCB;
+}
+.boxgrid .graphimg span.month.active {
+    color: #787878;
+}
+.boxgrid .graphtext h2.title {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+    color: #787878;
+    position: relative;
+}
+.boxgrid .graphtext h4 {
+    display: inline-block;
+    width: auto;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #252525;
+    margin: 20px 0 0 0;
+}
+.boxgrid .graphtext p {
+    width: auto;
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+}
+.boxgrid .graphtext p.green {
+    color: #2EB67D;
+}
+.boxgrid .graphtext p.red {
+    color: #FF0000;
+}
+span.rating {
+    position: relative;
+    display: inline-block;
+}
+span.rating i {
+    font-size: 16px;
+    margin: 0 3px;
+    color: #C7CAD1;
+}
+span.rating i.colored {
+    color: #FEC135;
+}
+span.ratetext {
+    position: relative;
+    display: inline-block;
+    margin-left: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #E01E5A;
+}
