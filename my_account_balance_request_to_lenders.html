@@ -56,13 +56,13 @@
             <div id="main">
                 <div class="innernav ">
                     <ul>
-                        <li class="active"><a href="javascript:;">Balance Request to Naqdina</a></li>
+                        <li><a href="my_account_request_balance.html">Balance Request to Naqdina</a></li>
                         <li><a href="my_account_my_profile.html">My Profile</a></li>
                         <li><a href="my_account_my_kyc.html">My KYC</a></li>
                         <li><a href="my_account_change_password.html">Change Password</a></li>
                         <li><a href="my_account_change_pin.html">Change PIN</a></li>
                         <li><a href="my_account_mobile_money_account.html">Mobile Money Account</a></li>
-                        <li><a href="my_account_balance_request_to_lenders.html">Balance Request to Lender</a></li>
+                        <li class="active"><a href="javascript:;">Balance Request to Lender</a></li>
                         <li><a href="my_account_lenders.html">Lenders</a></li>
                     </ul>
                 </div>
@@ -73,7 +73,17 @@
                                 <div class="col-xl-4 col-lg-6 col-md-12">
                                     <div class="form-group">
                                         <label class="form-label">Your Account Number</label>
-                                        <input type="text" class="form-control" placeholder="Your Account Number" value="+93 12 344 5678">
+                                        <select class="form-control">
+                                            <option>+93 12 344 5678  (Primary)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Request to Lender</label>
+                                        <select class="form-control">
+                                            <option>Abhay Aadab</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-12">
@@ -98,31 +108,8 @@
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-12">
                                     <div class="form-group">
-                                        <label class="form-label">Bank Name</label>
-                                        <select class="form-control">
-                                            <option>Afghanistan International Bank</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-6 col-md-12">
-                                    <div class="form-group">
-                                        <label class="form-label">TRX Number</label>
-                                        <input type="text" class="form-control" placeholder="TRX Number">
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-6 col-md-12">
-                                    <div class="form-group">
-                                        <label class="form-label">Deposit Slip</label>
-                                        <div class=" file-wrapper">
-                                            <input type="file" id="resume" name="resume">
-                                            <span class="file-button"> <span class="file-holder"></span> <i class="las la-paperclip"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-8 col-lg-6 col-md-12">
-                                    <div class="form-group">
                                         <label class="form-label">Remarks</label>
-                                        <input type="text" class="form-control" placeholder="Remarks (Optional)">
+                                        <input type="text" class="form-control" placeholder="Remarks">
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-6 col-md-6">
@@ -132,7 +119,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <div class="tablefilter">
+                        <div class="tablefilter" style="justify-content: left;"> 
                             <div class="longwidth formicon">
                                 <input type="text" class="form-control" placeholder="Search Agent by Mobile or Email">
                                 <i class="inputicon las la-search"></i>
@@ -149,9 +136,7 @@
                                         <th>Date & Time</th>
                                         <th>Your Account</th>
                                         <th>Payment Mode</th>
-                                        <th>Bank Name</th>
-                                        <th>TRX Number</th>
-                                        <th>Remarks & Notes</th>
+                                        <th>Lender Name</th>
                                         <th>Amount</th>
                                         <th>Status</th>
                                     </tr>
@@ -162,9 +147,7 @@
                                         <td>06 June 2020     15:35:50</td>
                                         <td>+93 12 344 5678</td>
                                         <td>Cash Deposit to Bank</td>
-                                        <td>Azizi Bank</td>
-                                        <td>53633722621627</td>
-                                        <td><span class="splittext"  data-toggle="tooltip" title="Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus ">Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus </span></td>
+                                        <td>Mahmud Al Ahmad</td>
                                         <td>$500.00</td>
                                         <td><span class="status pending">Pending</span></td>
                                     </tr>
@@ -173,9 +156,7 @@
                                         <td>06 June 2020     15:35:50</td>
                                         <td>+93 12 344 5678</td>
                                         <td>Cash Deposit to Bank</td>
-                                        <td>Azizi Bank</td>
-                                        <td>53633722621627</td>
-                                        <td><span class="splittext"  data-toggle="tooltip" title="Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus ">Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus </span></td>
+                                        <td>Mahmud Al Ahmad</td>
                                         <td>$500.00</td>
                                         <td><span class="status success">Success</span></td>
                                     </tr>
@@ -184,9 +165,7 @@
                                         <td>06 June 2020     15:35:50</td>
                                         <td>+93 12 344 5678</td>
                                         <td>Cash Deposit to Bank</td>
-                                        <td>Azizi Bank</td>
-                                        <td>53633722621627</td>
-                                        <td><span class="splittext"  data-toggle="tooltip" title="Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus ">Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus </span></td>
+                                        <td>Mahmud Al Ahmad</td>
                                         <td>$500.00</td>
                                         <td><span class="status failed">Rejected</span></td>
                                     </tr>
@@ -195,9 +174,7 @@
                                         <td>06 June 2020     15:35:50</td>
                                         <td>+93 12 344 5678</td>
                                         <td>Cash Deposit to Bank</td>
-                                        <td>Azizi Bank</td>
-                                        <td>53633722621627</td>
-                                        <td><span class="splittext"  data-toggle="tooltip" title="Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus ">Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus </span></td>
+                                        <td>Mahmud Al Ahmad</td>
                                         <td>$500.00</td>
                                         <td><span class="status success">Accepted</span></td>
                                     </tr>
@@ -206,9 +183,7 @@
                                         <td>06 June 2020     15:35:50</td>
                                         <td>+93 12 344 5678</td>
                                         <td>Cash Deposit to Bank</td>
-                                        <td>Azizi Bank</td>
-                                        <td>53633722621627</td>
-                                        <td><span class="splittext"  data-toggle="tooltip" title="Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus ">Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus </span></td>
+                                        <td>Mahmud Al Ahmad</td>
                                         <td>$500.00</td>
                                         <td><span class="status success">Accepted</span></td>
                                     </tr>
@@ -217,9 +192,7 @@
                                         <td>06 June 2020     15:35:50</td>
                                         <td>+93 12 344 5678</td>
                                         <td>Cash Deposit to Bank</td>
-                                        <td>Azizi Bank</td>
-                                        <td>53633722621627</td>
-                                        <td><span class="splittext"  data-toggle="tooltip" title="Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus ">Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus </span></td>
+                                        <td>Mahmud Al Ahmad</td>
                                         <td>$500.00</td>
                                         <td><span class="status success">Accepted</span></td>
                                     </tr>
@@ -228,9 +201,7 @@
                                         <td>06 June 2020     15:35:50</td>
                                         <td>+93 12 344 5678</td>
                                         <td>Cash Deposit to Bank</td>
-                                        <td>Azizi Bank</td>
-                                        <td>53633722621627</td>
-                                        <td><span class="splittext"  data-toggle="tooltip" title="Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus ">Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus </span></td>
+                                        <td>Mahmud Al Ahmad</td>
                                         <td>$500.00</td>
                                         <td><span class="status success">Accepted</span></td>
                                     </tr>
@@ -239,9 +210,7 @@
                                         <td>06 June 2020     15:35:50</td>
                                         <td>+93 12 344 5678</td>
                                         <td>Cash Deposit to Bank</td>
-                                        <td>Azizi Bank</td>
-                                        <td>53633722621627</td>
-                                        <td><span class="splittext"  data-toggle="tooltip" title="Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus ">Ornare suspendisse elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit elit, velit semper purus leo proin malesuada ornare. Nisl mi ut velit sit senectus senectus maecenas felis sed metus </span></td>
+                                        <td>Mahmud Al Ahmad</td>
                                         <td>$500.00</td>
                                         <td><span class="status success">Accepted</span></td>
                                     </tr>
@@ -252,7 +221,7 @@
                 </div>
             </div>
         </section>
-        <div class="modal successpopup largepopup" id="confirmTopUp">
+        <div class="modal successpopup width600" id="confirmTopUp">
             <div class="modal-dialog">
               <div class="modal-content">      
                 <!-- Modal Header -->
@@ -268,23 +237,15 @@
                         <div class="sucessmessage smallp">
                             <h4>Balance Request</h4>
                             <div class="row">
-                                <div class="col-xl-8 col-lg-8 col-md-12">
-                                    <p class="topuplist"><span class="title">Your Account:</span><span class="val">+93 12 344 5678</span></p>
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <p class="topuplist"><span class="title">Your Account Number:</span><span class="val">+93 12 344 5678</span></p>
+                                    <p class="topuplist"><span class="title">Lender Name:</span><span class="val">Abhay Aadab</span></p>
                                      <p class="topuplist"><span class="title">Request Amount:</span><span class="val themeclr">$2000.00</span></p>
                                     <p class="topuplist"><span class="title">Payment Date:</span><span class="val">05/21/2020</span></p>
                                     <p class="topuplist"><span class="title">Payment Mode:</span><span class="val">Cash Deposit to Bank</span></p>
-                                    <p class="topuplist"><span class="title">Bank:</span><span class="val">Afghan International Bank</span></p>
-                                    <p class="topuplist"><span class="title">TRX Number:</span><span class="val">1214468523523321</span></p>
                                     <p class="topuplist"><span class="title">Remarks:</span><span class="val">Cash Deposit by John</span></p>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-md-12">
-                                    <span class="sliptext">Deposit Slip:</span>
-                                    <img src="images/slip.png" class="slip">
-                                </div>
-                                <div class="col-lg-6 col-md-12 text-right">
-                                    <a href="javascript:;" data-dismiss="modal" class="borderthemebtn wauto">cancel</a>
-                                </div>
-                                <div class="col-lg-6 col-md-12">
+                                <div class="col-lg-12 col-md-12">
                                     <a href="javascript:;" data-dismiss="modal" data-toggle="modal" data-target="#yourPin" class="themebtn wauto">Confirm</a>
                                 </div>
                             </div>
@@ -321,7 +282,7 @@
             </div>
             </div>
         </div>
-        <div class="modal successpopup largepopup" id="topUpSuccessful">
+        <div class="modal successpopup width600" id="topUpSuccessful">
             <div class="modal-dialog">
               <div class="modal-content">      
                 <!-- Modal Header -->
@@ -337,18 +298,13 @@
                         <div class="sucessmessage smallp">
                             <h4>Balance Request Submitted Successfully!</h4>
                             <div class="row">
-                                <div class="col-xl-8 col-lg-8 col-md-12">
-                                    <p class="topuplist"><span class="title">Your Account:</span><span class="val">+93 12 344 5678</span></p>
+                                <div class="col-xl-12 col-lg-12 col-md-12">
+                                    <p class="topuplist"><span class="title">Your Account Number:</span><span class="val">+93 12 344 5678</span></p>
+                                    <p class="topuplist"><span class="title">Lender Name:</span><span class="val">Abhay Aadab</span></p>
                                      <p class="topuplist"><span class="title">Request Amount:</span><span class="val themeclr">$2000.00</span></p>
                                     <p class="topuplist"><span class="title">Payment Date:</span><span class="val">05/21/2020</span></p>
                                     <p class="topuplist"><span class="title">Payment Mode:</span><span class="val">Cash Deposit to Bank</span></p>
-                                    <p class="topuplist"><span class="title">Bank:</span><span class="val">Afghan International Bank</span></p>
-                                    <p class="topuplist"><span class="title">TRX Number:</span><span class="val">1214468523523321</span></p>
                                     <p class="topuplist"><span class="title">Remarks:</span><span class="val">Cash Deposit by John</span></p>
-                                </div>
-                                <div class="col-xl-4 col-lg-4 col-md-12">
-                                    <span class="sliptext">Deposit Slip:</span>
-                                    <img src="images/slip.png" class="slip">
                                 </div>
                                 <div class="col-lg-12 col-md-12">
                                     <a href="javascript:;" data-dismiss="modal" class="themebtn wauto">ok</a>

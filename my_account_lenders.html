@@ -50,8 +50,8 @@
                     <li><a href="javascript:;"> <i class="las la-tachometer-alt "></i> Dashboard</a><i class="fa fa-angle-right"></i></li>
                     <li><a href="mobile_recharge_mobile_top.html"> <i class="las la-file-import"></i>  Mobile Recharge</a><i class="fa fa-angle-right"></i></li>
                     <li><a href="bill_payments.html"> <i class="las la-poll-h"></i> Bill Payment</a></li>
-                    <li><a href="my_account_request_balance.html"> <i class="las la-address-book"></i> My Acccount</a><i class="fa fa-angle-right"></i></li>
-                    <li class="active"><a href="javascript:;"> <i class="las la-user-friends"></i> Manage Agents</a><i class="fa fa-angle-right"></i></li>
+                    <li class="active"><a href="javascript:;"> <i class="las la-address-book"></i> My Acccount</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="Manage_agents_add_agent.html"> <i class="las la-user-friends"></i> Manage Agents</a><i class="fa fa-angle-right"></i></li>
                     <li><a href="settings_notifications.html"> <i class="fa fa-cog"></i> Settings</a><i class="fa fa-angle-right"></i></li>
                     <li><a href="reports_credit_statement.html"> <i class="las la-chart-pie"></i> Reports</a><i class="fa fa-angle-right"></i></li>
                     <li><a href="javascript:;"> <i class="las la-chart-pie"></i> System Status</a></li>
@@ -59,80 +59,26 @@
                 </ul>
             </div>
             <div id="main">
-                <div class="innernav">
+                <div class="innernav exbottom">
                     <ul>
-                        <li><a href="Manage_agents_add_agent.html">Add Agent</a></li>
-                        <li><a href="Manage_agents_invite_agents.html">Invite Agents</a></li>
-                        <li class="active"><a href="javascript:;">View Agents</a></li>
-                        <li><a href="Manage_agents_transfer_balance.html">Transfer Balance</a></li>
-                        <li><a href="Manage_agents_agents_requests.html">Agents Requests</a></li>
-                        <li><a href="Manage_agents_sales_target.html">Sales Target</a></li>
+                        <li><a href="my_account_request_balance.html">Balance Request to Naqdina</a></li>
+                        <li><a href="my_account_my_profile.html ">My Profile</a></li>
+                        <li><a href="my_account_my_kyc.html">My KYC</a></li>
+                        <li><a href="my_account_change_password.html">Change Password</a></li>
+                        <li><a href="my_account_change_pin.html">Change PIN</a></li>
+                        <li><a href="my_account_mobile_money_account.html">Mobile Money Account</a></li>
+                        <li><a href="my_account_balance_request_to_lenders.html">Balance Request to Lender</a></li>
+                        <li class="active"><a href="javascript:;">Lenders</a></li>
                     </ul>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="boxgrid smallpad">
-                            <div class="graphtext">
-                                <h2 class="title">&nbsp;</h2>
-                                <h4>25</h4>
-                                <p class="green">5% <i class="fa fa-sort-up"></i></p>
-                            </div>
-                            <div class="graphimg">
-                                <img src="images/graph_up.png">
-                                <img src="images/graph_down.png">
-                                <span class="month">Mar</span><span class="month active">Apr</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="boxgrid smallpad">
-                            <div class="graphtext">
-                                <h2 class="title">Total Agents</h2>
-                                <h4>332</h4>
-                                <p class="green">2% <i class="fa fa-sort-up"></i></p>
-                            </div>
-                            <div class="graphimg">
-                                <img src="images/graph_up.png">
-                                <img src="images/graph_down.png">
-                                <span class="month">Feb</span><span class="month">Mar</span><span class="month active">Apr</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="boxgrid smallpad">
-                            <div class="graphtext">
-                                <h2 class="title">Active Agents</h2>
-                                <h4>250</h4>
-                                <p class="green">5% <i class="fa fa-sort-up"></i></p>
-                            </div>
-                            <div class="graphimg">
-                                <img src="images/graph_up.png">
-                                <img src="images/graph_down.png">
-                                <span class="month">Feb</span><span class="month">Mar</span><span class="month active">Apr</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="boxgrid smallpad">
-                            <div class="graphtext">
-                                <h2 class="title">Inactive Agents</h2>
-                                <h4>25</h4>
-                                <p class="red">5% <i class="fa fa-sort-down"></i></p>
-                            </div>
-                            <div class="graphimg">
-                                <img src="images/graph_up.png">
-                                <img src="images/graph_down.png">
-                                <span class="month">Feb</span><span class="month">Mar</span><span class="month active">Apr</span>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-12">
-                        <div class="tablefilter">
+                        <div class="tablefilter" style="justify-content: left;">
                             <div class="longwidth formicon">
                                 <input type="text" class="form-control" placeholder="Search Agent by Mobile or Email">
                                 <i class="inputicon las la-search"></i>
                             </div>
-                            <p>Total: 90 agents</p>
+                            <p>Total: 90 lenders</p>
                         </div>
                     </div>
                     <div class="col-lg-12">
@@ -471,10 +417,9 @@
        <script src="vendor/slick/slick.js"></script>
        <script src="js/script.js"></script>
        <script>
-           
         $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-       </script>
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
     </body>
 </html>

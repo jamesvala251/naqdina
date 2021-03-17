@@ -2012,3 +2012,143 @@ span.ratetext {
     text-transform: uppercase;
     color: #E01E5A;
 }
+.extralarge.successpopup .modal-dialog {
+    max-width: 1000px;
+}
+.extralarge.successpopup .sucessmessage .boxgrid.smallpad h6:last-child {
+    width: auto;
+}
+.extralarge.successpopup .modal-dialog .modal-body .sucessbox .sucessmessage p.topuplist span.title {
+    display: block;
+    width: 100%;
+}
+.extralarge.successpopup .modal-dialog .modal-body .sucessbox .sucessmessage p.topuplist span.val {
+    display: block;
+    width: 100%;
+}
+.extralarge.successpopup .modal-dialog .modal-body .sucessbox .sucessmessage p.topuplist {
+    margin-bottom: 15px;
+}
+.reviewbox {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #C7CAD1;
+}
+.reviewbox span.reviewimg {
+    width: 36px;
+    display: inline-block;
+}
+.reviewbox span.reviewimg img {
+    max-width: 100%;
+}
+.reviewbox  span.reviewtitle {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 36px - 100px);
+    vertical-align: top;
+}
+.reviewbox  span.reviewdate {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: right;
+    color: #BDBDBD;
+    width: 90px;
+    display: inline-block;
+    vertical-align: top;
+}
+.reviewbox span.reviewtitle h6 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 125.8%;
+    text-transform: uppercase;
+    color: #333333;
+    margin-top: 8px;
+}
+.reviewbox span.reviewdescription {
+    display: block;
+    width: 100%;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 133.3%;
+    color: #333333;
+}
+.listofreview {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-height: 428px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #4167E3 transparent;
+}
+.listofreview::-webkit-scrollbar {
+  width: 3px;
+  height: 9px;
+
+}
+.listofreview::-webkit-scrollbar-track {
+    background-color: #ECEFFB;
+}
+.listofreview::-webkit-scrollbar-thumb {
+    background: #4167E3;
+    border-radius: 20px;
+    width: 3px;
+    height: 9px;
+}
+.listofreview::-webkit-scrollbar-thumb:hover {
+    background: #4167E3;
+    border-radius: 10px;
+}
+.extralarge.successpopup .modal-dialog .modal-body .sucessbox .sucessmessage a.themebtn.wauto {
+    margin: unset;
+}
+.extralarge.successpopup .modal-dialog .modal-body .sucessbox .sucessmessage .text-right a.themebtn.wauto {
+    margin-left: auto;
+}
+.width600.successpopup .modal-dialog {
+    max-width: 532px;
+}
+span.rateimg {
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.sucessmessage.smallp.mrbsmall span.rating.big i {
+    font-size: 27px;
+    margin: 0 5px;
+}
+.sucessmessage.smallp.mrbsmall span.rating.big {
+    text-align: center;
+    position: relative;
+    display: block;
+    margin-bottom: 21px;
+    margin-top: 17px;
+}
+textarea.form-control.textarea {
+    background: #F3F3F3;
+    border-radius: 8px;
+    height: 100px;
+    resize: none;
+}
+.width600.successpopup .modal-dialog .modal-body .sucessbox .sucessprofile {
+    flex-direction: column;
+}
+.width600.successpopup .modal-dialog .modal-body .sucessbox .sucessprofile h6.revirename {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+span.status.Default {
+    background: #EDEAF7;
+    color: #4167E3;
+}

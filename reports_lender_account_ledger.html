@@ -10,6 +10,11 @@
         <link rel="stylesheet" href="vendor/slick/slick-theme.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <style>
+            span.splittext {
+                width: 60px;
+            }
+        </style>
     </head>
     <body>
         <header class="header">
@@ -59,8 +64,8 @@
                         <li><a href="reports_credit_statement.html">Credit Statement</a></li>
                         <li><a href="reports_my_account_ledger.html">My Account Ledger</a></li>
                         <li><a href="reports_my_agent_statement.html">Agent Statement</a></li>
-                        <li class="active"><a href="javascript:;">Transaction Report</a></li>
-                        <li><a href="reports_lender_account_ledger.html">Lender Account Ledger</a></li>
+                        <li><a href="reports_my_transaction_report.html">Transaction Report</a></li>
+                        <li class="active"><a href="javascript:;">Lender Account Ledger</a></li>
                     </ul>
                 </div>
                 <div class="row">
@@ -85,112 +90,107 @@
                                 <thead>
                                     <tr>
                                         <th>S. No</th>
-                                        <th>Request ID</th>
+                                        <th>Agent No.</th>
                                         <th>Date & Time</th>
-                                        <th>Your Account</th>
-                                        <th>Provider Name</th>
-                                        <th>Customer No.</th>
-                                        <th>Face Value</th>
-                                        <th>Net Value</th>
+                                        <th>Agent name</th>
+                                        <th>Agent consumed balance</th>
+                                        <th>Rate reason</th>
+                                        <th>Loaned</th>
                                         <th>Status</th>
+                                        <th>Earned Comission</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>001</td>
-                                        <td>423487230</td>
+                                        <td>1006598</td>
                                         <td>06 June 2020     15:35:50</td>
-                                        <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status success">Success</span></td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status success">Paid</span></td>
+                                        <td>2.50</td>
                                     </tr>
                                     <tr>
                                         <td>002</td>
-                                        <td>423487230</td>
+                                        <td>1006598</td>
                                         <td>06 June 2020     15:35:50</td>
-                                        <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status failed">Failed</span></td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status pending">Top up</span></td>
+                                        <td>2.50</td>
                                     </tr>
                                     <tr>
                                         <td>003</td>
-                                        <td>423487230</td>
+                                        <td>1006598</td>
                                         <td>06 June 2020     15:35:50</td>
-                                        <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status success">Success</span></td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status Default">Balance</span></td>
+                                        <td>2.50</td>
                                     </tr>
                                     <tr>
                                         <td>004</td>
-                                        <td>423487230</td>
+                                        <td>1006598</td>
                                         <td>06 June 2020     15:35:50</td>
-                                        <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status success">Success</span></td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status success">Paid</span></td>
+                                        <td>2.50</td>
                                     </tr>
                                     <tr>
                                         <td>005</td>
-                                        <td>423487230</td>
+                                        <td>1006598</td>
                                         <td>06 June 2020     15:35:50</td>
-                                        <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status success">Success</span></td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status success">Paid</span></td>
+                                        <td>2.50</td>
                                     </tr>
                                     <tr>
                                         <td>006</td>
-                                        <td>423487230</td>
+                                        <td>1006598</td>
                                         <td>06 June 2020     15:35:50</td>
-                                        <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status success">Success</span></td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status success">Paid</span></td>
+                                        <td>2.50</td>
                                     </tr>
                                     <tr>
                                         <td>007</td>
-                                        <td>423487230</td>
+                                        <td>1006598</td>
                                         <td>06 June 2020     15:35:50</td>
-                                        <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status success">Success</span></td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status success">Paid</span></td>
+                                        <td>2.50</td>
                                     </tr>
                                     <tr>
                                         <td>008</td>
-                                        <td>423487230</td>
+                                        <td>1006598</td>
                                         <td>06 June 2020     15:35:50</td>
-                                        <td><span class="lighttext">+93 12 344 5678</span></td>
-                                        <td>Etisalat Telecom</td>
-                                        <td><span class="lighttext">+93 70 022 4848</span></td>
-                                        <td>500.00</td>
-                                        <td><span class="lighttext">465.00</span></td>
-                                        <td><span class="status success">Success</span></td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status failed">Default</span></td>
+                                        <td>2.50</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <div class="nohaveagents">
-                                <div class="noagents">
-                                    <p>No transaction found for the selected number</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -254,5 +254,10 @@
        <script src="vendor/select-picker/js/bootstrap-select.min.js"></script>
        <script src="vendor/slick/slick.js"></script>
        <script src="js/script.js"></script>
+       <script>
+           $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+       </script>
     </body>
 </html>
