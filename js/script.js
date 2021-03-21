@@ -3,4 +3,7 @@ $(document).ready(function(){
         $('#navSidebar').toggleClass('opensidebar');
         $('#main').toggleClass('mainboxarea');
     });
+    $('a.notification').click(function(){
+        $(this).toggleClass('active');
+    });
 });
