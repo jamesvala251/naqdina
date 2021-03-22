@@ -2563,3 +2563,190 @@ color: #E01E5A;
     line-height: 24px;
     letter-spacing: 0.15px;
 }
+
+.chatbox {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.chatbox .msg_history {
+    height: calc(100vh - 294px);
+    overflow-y: auto;
+    position: relative;
+    display: block;
+    scrollbar-width: thin;
+    scrollbar-color: #4167E3 transparent;
+}
+.chatbox .msg_history::-webkit-scrollbar {
+  width: 3px;
+  height: 9px;
+
+}
+.chatbox .msg_history::-webkit-scrollbar-track {
+    background-color: #ECEFFB;
+}
+.chatbox .msg_history::-webkit-scrollbar-thumb {
+    background: #4167E3;
+    border-radius: 20px;
+    width: 3px;
+    height: 9px;
+}
+.chatbox .msg_history::-webkit-scrollbar-thumb:hover {
+    background: #4167E3;
+    border-radius: 10px;
+}
+.chatbox .outgoing_msg {
+    overflow: hidden;
+    margin: 14px 0;
+}
+.chatbox .outgoing_msg .sent_msg {
+    float: right;
+    width: 46%;
+    text-align: right;
+}
+.chatbox .outgoing_msg .sent_msg p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #000000;
+    margin: 0;
+    background: #D5DEFF;
+    border-radius: 30px 5px 30px 30px;
+    padding: 12px 20px;
+    width: auto;
+    display: inline-block;
+}
+.chatbox span.time_date {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #757575;
+    margin: 8px 20px 0 0;
+    display: block;
+}
+.chatbox .incoming_msg_img {
+    width: 6%;
+    display: block;
+    margin-bottom: 8px;
+}
+.chatbox .incoming_msg_img img {
+    max-width: 100%;
+}
+.chatbox .received_msg {
+    display: inline-block;
+    padding: 0;
+    vertical-align: top;
+    width: 100%;
+}
+.chatbox .received_msg .received_withd_msg {
+    width: 47%;
+}
+.chatbox .received_msg p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #000000;
+    background: #F5F5F5;
+    border-radius: 21px;
+    padding: 12px 18px;
+    width: auto;
+    display: inline-block;
+    margin: 0;
+}
+.chatbox .received_msg span.time_date {
+    text-align: left;
+}
+.chatbox .type_msg {
+    border-top: 1px solid #c4c4c4;
+    position: relative;
+    background: #F9F9F9;
+    border-radius: 0px 0px 8px 8px;
+    padding: 5px 10px;
+}
+.chatbox .type_msg input.write_msg {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #4c4c4c;
+    font-size: 15px;
+    min-height: 40px;
+    width: calc(100% - 60px);
+    border-bottom: 1px solid #e01e5a;
+}
+.chatbox .type_msg button.msg_send_btn {
+    border: medium none;
+    color: #000;
+    cursor: pointer;
+    font-size: 17px;
+    height: 40px;
+    position: relative;
+    display: inline-block;
+    width: 27px;
+    background: transparent;
+    padding: 0;
+}
+.chatbox .type_msg a.attachmentbox {
+    position: relative;
+    width: 25px;
+    display: inline-block;
+    color: #000;
+    height: 40px;
+    vertical-align: top;
+}
+.chatbox .type_msg a.attachmentbox i {
+    font-size: 20px;
+    line-height: 40px;
+}
+.chatbox .type_msg button.msg_send_btn i {
+    font-size: 26px;
+    transform: rotate(90deg);
+}
+.chatbox .type_msg input.write_msg:focus {
+    outline: unset;
+    box-shadow: unset;
+}
+.supportbox .card.helpfaq .card-header h2 button span.status {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 20px;
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    margin-left: 15px;
+}
+.supportbox .pending .card.helpfaq .card-header h2 button span.status {
+    color: #FFB51F;
+    background: #FDF7EB;
+}
+.supportbox .green .card.helpfaq .card-header h2 button span.status {
+    background: #EAF7F2;
+    color: #2EB67D;
+}
+.supportbox .boxgrid.leftstatus.pending {
+    border-left: 9px solid #FFB51F;
+}
+.supportbox .boxgrid.leftstatus.green {
+    border-left: 9px solid #2EB67D;
+}
+.supportbox .boxgrid .chatbox {
+    border-top: 1px solid #C7CAD1;
+    margin-top: 20px;
+    padding-top: 20px;
+    position: relative;
+    display: block;
+}
+.supportbox .boxgrid .chatbox .msg_history {
+    height: calc(100vh - 513px);
+}
+@media (max-width:767px){
+    .chatbox .outgoing_msg .sent_msg,.chatbox .received_msg .received_withd_msg {
+        width: 98%;
+    }
+}
