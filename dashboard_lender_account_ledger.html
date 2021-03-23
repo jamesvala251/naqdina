@@ -1,0 +1,263 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Naqdina</title>
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="icons/css/line-awesome.min.css">
+        <link rel="stylesheet" href="vendor/select-picker/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="vendor/slick/slick.css">
+        <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            span.splittext {
+                width: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="topbar">
+                        <ul class="navlist">
+                            <li>
+                                <a href="javascript:;"><span>Balance:</span><h6>AFN  875,222.12</h6></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="notification"><i class="fa fa-bell-o"></i><span class="count">23</span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><p>Hi, Dustin <span>Apr 10,  4:28 PM</span></p><img src="images/user.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="main-section">
+            <div id="navSidebar" class="sidebar">
+                <div class="logo">                    
+                    <a href="index.html" class="logo">
+                        <img src="images/naqdina_logo.png" class="big">
+                        <img src="images/smalllogo.png" class="small">
+                    </a>
+                </div>
+                <h5 class="menuname">Menu</h5>
+                <button class="openbtn openSitebararea"><img src="images/menu_icon.png"></button>  
+                <ul>
+                    <li class="active"><a href="javascript:;"> <i class="las la-tachometer-alt "></i> Dashboard</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="mobile_recharge_mobile_top.html"> <i class="las la-file-import"></i>  Mobile Recharge</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="bill_payments.html"> <i class="las la-poll-h"></i> Bill Payment</a></li>
+                    <li><a href="my_account_request_balance.html"> <i class="las la-address-book"></i> My Acccount</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="Manage_agents_add_agent.html"> <i class="las la-user-friends"></i> Manage Agents</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="settings_notifications.html"> <i class="fa fa-cog"></i> Settings</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="reports_credit_statement.html"> <i class="las la-chart-pie"></i> Reports</a><i class="fa fa-angle-right"></i></li>
+                    <li><a href="system_status.html"> <i class="las la-chart-pie"></i> System Status</a></li>
+                    <li><a href="help_contact_for_support.html"> <i class="las la-headphones"></i> Help</a><i class="fa fa-angle-right"></i></li>
+                </ul>
+            </div>
+            <div id="main">
+                <div class="innernav">
+                    <ul>
+                        <li><a href="dashboard.html">Overview</a></li>
+                        <li><a href="dashboard_mobile_recharge.html">Mobile Recharge</a></li>
+                        <li><a href="dashboard_bill_payment.html">Bill Payment</a></li>
+                        <li><a href="dashboard_agent_performance.html">Agent Performance</a></li>
+                        <li class="active"><a href="javascript:;">Lender Account Ledger</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="tablefilter">
+                            <p>Select the date range</p>
+                            <div class="smallwidth formicon">
+                                <input type="text" class="form-control" value="Last 7 Days">
+                                <i class="inputicon las la-calendar"></i>
+                            </div>
+                            <div class="longwidth formicon">
+                                <input type="text" class="form-control" placeholder="Search Agent by Mobile or Email">
+                                <i class="inputicon las la-search"></i>
+                            </div>
+                            <button type="button" class="filterbtn wauto">View</button>
+                            <button type="button" class="filterbtn"><i class="las la-download"></i> Download</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="table-responsive tableboxdesign">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>S. No</th>
+                                        <th>Agent No.</th>
+                                        <th>Date & Time</th>
+                                        <th>Agent name</th>
+                                        <th>Agent consumed balance</th>
+                                        <th>Rate reason</th>
+                                        <th>Loaned</th>
+                                        <th>Status</th>
+                                        <th>Earned Comission</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>1006598</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status success">Paid</span></td>
+                                        <td>2.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>002</td>
+                                        <td>1006598</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status pending">Top up</span></td>
+                                        <td>2.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>003</td>
+                                        <td>1006598</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status Default">Balance</span></td>
+                                        <td>2.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>004</td>
+                                        <td>1006598</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status success">Paid</span></td>
+                                        <td>2.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>005</td>
+                                        <td>1006598</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status success">Paid</span></td>
+                                        <td>2.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>006</td>
+                                        <td>1006598</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status success">Paid</span></td>
+                                        <td>2.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>007</td>
+                                        <td>1006598</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status success">Paid</span></td>
+                                        <td>2.50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>008</td>
+                                        <td>1006598</td>
+                                        <td>06 June 2020     15:35:50</td>
+                                        <td>Mubrak Shah</td>
+                                        <td>1,887.50</td>
+                                        <td><span class="splittext"  data-toggle="tooltip" title="Some rat...">Some rat...</span></td>
+                                        <td>5000.00</td>
+                                        <td><span class="status failed">Default</span></td>
+                                        <td>2.50</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal successpopup" id="inviteAgents">
+            <div class="modal-dialog">
+              <div class="modal-content">      
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>      
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="sucessbox">
+                        <div class="sucessprofile">
+                            <img src="images/agent.png">
+                        </div>
+                        <div class="sucessmessage smallp">
+                            <h4>Invite Agents</h4>
+                            <p class="themetext">You will sent invite to 6 users:</p>
+                            <p>+93 70 022 4848;<br>
+                            mubrak.muhammad@gmail.com</p>
+                            <p>+93 70 022 4848;<br>
+                            mubrak.muhammad@gmail.com</p>
+                            <p>+93 70 022 4848;<br>
+                            mubrak.muhammad@gmail.com</p>
+                            <a href="javascript:;" data-toggle="modal" data-target="#successInvite" data-dismiss="modal" class="themebtn disply-block wauto">submit</a>
+                        </div>
+                    </div>
+                </div>      
+              </div>
+            </div>
+          </div>
+          <div class="modal successpopup" id="successInvite">
+              <div class="modal-dialog">
+                <div class="modal-content">      
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>      
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                      <div class="sucessbox">
+                          <div class="sucessprofile">
+                              <img src="images/Success.png">
+                          </div>
+                          <div class="sucessmessage smallp">
+                              <h4>Success!</h4>
+                              <p>You have sent invitations to 6 Users. They will receive a message with a link and will be able to register in the Nakdina app</p>
+                              <a href="javascript:;" class="themebtn disply-block wauto">ok</a>
+                          </div>
+                      </div>
+                  </div>      
+                </div>
+              </div>
+            </div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+       <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+       <script src="vendor/select-picker/js/bootstrap-select.min.js"></script>
+       <script src="vendor/slick/slick.js"></script>
+       <script src="js/script.js"></script>
+       <script>
+           $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+       </script>
+    </body>
+</html>
